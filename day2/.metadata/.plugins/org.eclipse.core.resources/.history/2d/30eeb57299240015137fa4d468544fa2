@@ -1,0 +1,16 @@
+package Practice;
+
+import java.util.Scanner;
+
+public class Demo1 {
+
+	public static void main(String[] args) {
+		Scanner a = new Scanner(System.in);
+		int day = a.nextInt();
+		String monthString = "";
+		switch(day){
+		case 1:monthString = "Monday";
+		}
+	}
+
+}

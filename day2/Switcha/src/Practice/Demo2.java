@@ -1,0 +1,33 @@
+package Practice;
+
+import java.util.Scanner;
+
+public class Demo2 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("请输入周几：");
+		Scanner a = new Scanner(System.in);
+		String day = a.nextLine();
+		int day1 = 0;
+		switch(day.toLowerCase()){
+		case "monday":day1 = 1;break;
+		case "tuesday":day1 = 2;break;
+		case "wednesday":day1 = 3;break;
+		case "thursday":day1 = 4;break;
+		case "friday":day1 = 5;break;
+		case "saturday":day1 = 6;break;
+		case "sunday":day1 = 7;break;
+		default:day1 = 0;
+		}
+		if(day1 == 0){
+			System.out.println("无效输入");
+		}else{
+			System.out.println(day1);
+		}
+	}
+
+}
