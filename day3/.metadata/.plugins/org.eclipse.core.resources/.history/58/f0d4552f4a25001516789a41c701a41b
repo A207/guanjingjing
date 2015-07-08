@@ -1,0 +1,100 @@
+package homework;
+
+public class Homework {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Army a = new Army(3);
+		a.addWeapon(new Tank());
+		a.addWeapon(new Flighter());
+		a.addWeapon(new WarShip());
+		// a.addWeapon(new WarShip());
+		a.attacAll();
+		a.moveAll();
+	}
+}
+
+
+	interface Assaultable {
+		abstract public void attack();
+	}
+
+	interface Mobile {
+		abstract public void move();
+	}
+
+	abstract class Weapon implements Assaultable, Mobile {}
+
+	class Tank extends Weapon {
+		public void attack() {
+			System.out.println("坦克攻击啦");
+		}
+
+		public void move() {
+			System.out.println("坦克移动啦");
+		}
+	}
+
+	class Flighter extends Weapon {
+
+		public void attack() {
+			System.out.println("战斗机攻击啦");
+		}
+
+		public void move() {
+			System.out.println("战斗机移动啦");
+		}
+
+	}
+
+	class WarShip extends Weapon {
+
+		public void attack() {
+			System.out.println("军舰攻击啦");
+		}
+
+		public void move() {
+			System.out.println("军舰移动啦");
+		}
+
+	}
+
+	class Army {
+		private Weapon[] w = null;
+
+		private int size = 0;
+
+		private Army() {}
+
+		public Army(int i) {
+			w = new Weapon[i];
+		}
+
+		public void addWeapon(Weapon weapon) {
+			if (size >= w.length) {
+				System.out.println("军队装备足够了!");
+				return;
+			}else {
+				w[size] = weapon;
+				size++;
+			}
+		}
+
+		public void attacAll() {
+			for (Weapon wea : w) {
+				if (wea != null) {
+					wea.attack();
+				}
+			}
+		}
+
+		public void moveAll() {
+			for (Weapon wea : w) {
+				if (wea != null) {
+					wea.move();
+				}
+			}
+		}
+	
+	}
+
