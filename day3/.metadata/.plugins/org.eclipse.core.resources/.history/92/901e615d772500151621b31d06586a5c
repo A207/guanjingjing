@@ -1,0 +1,28 @@
+package lesson4;
+
+public class UsbDemo implements Usb {
+
+	public void mi() {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void mw(String name) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public String m3() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

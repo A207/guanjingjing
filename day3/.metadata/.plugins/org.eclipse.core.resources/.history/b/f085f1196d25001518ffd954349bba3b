@@ -1,0 +1,10 @@
+package lesson4;
+
+public class Lion extends Animal {
+
+	public void sleep() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

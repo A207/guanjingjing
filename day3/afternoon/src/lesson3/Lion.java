@@ -1,0 +1,9 @@
+package lesson3;
+
+public class Lion extends Animal {
+	
+	public String str = "й╗вс";
+	public void sleep(){
+		System.out.println("е©век╞");
+	}
+}
