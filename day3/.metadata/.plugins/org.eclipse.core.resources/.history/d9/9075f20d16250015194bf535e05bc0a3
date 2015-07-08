@@ -1,0 +1,20 @@
+package lesson1;
+
+public class Person {
+	String name;
+	int age;
+	String address;
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Person person = new Person();
+		person.name = "李四";
+		person.age = 20;
+		person.address = "USA";
+	}
+	void introduce(){
+		System.out.println("大家好，我叫"+name+"，今年"+age+"岁了，我在"+address);
+	}
+}
