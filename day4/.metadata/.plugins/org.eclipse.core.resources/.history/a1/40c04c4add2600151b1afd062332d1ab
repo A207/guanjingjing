@@ -1,0 +1,76 @@
+package com.example.homework2;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+
+
+public class MainActivity extends Activity {
+	private EditText et_number;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+
+	super.onCreate(savedInstanceState);
+
+	setContentView(R.layout.activity_main);
+
+	et_number = (EditText)this.findViewById(R.id.editText1);
+
+	}
+	public void query(View view){
+
+	Stringnumber = et_number.getText().toString().trim();
+
+	//web中的能获取号码归属地资源的地址
+
+	Stringpath =
+
+	"http://api.showji.com/Locating/20120413.aspx?m="+number+"&output=json";
+
+	try {
+
+	//请求地址
+
+	URL url = new URL(path);
+
+	HttpURLConnection conn = (HttpURLConnection)url.openConnection();
+	conn.setConnectTimeout(5000);
+	if(conn.getResponseCode()==200){
+	//
+	InputStream is = conn.getInputStream();
+	//获取json格式的数据
+	String json = (new String(StreamTools.getBytes(is),"utf-8"));
+	JSONObject obj = new JSONObject(json);
+	System.out.println(json);
+	String text = (String) obj.get("City");
+	Toast.makeText(this,"归属地为 "+text, 0).show();
+	}
+	} catch (Exception e) {
+	// TODO Auto-generated catch block
+	e.printStackTrace();
+	}
+	}
+    
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+        if (id == R.id.action_settings) {
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+}
