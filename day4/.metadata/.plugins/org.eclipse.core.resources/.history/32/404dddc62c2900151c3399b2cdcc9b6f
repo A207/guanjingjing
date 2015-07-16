@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingTop="5dip" >
+ 
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+ 
+        <TextView
+            android:id="@+id/tv_calc_sum"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:background="#00ffff"
+            android:gravity="center_vertical|right" >
+        </TextView>
+    </LinearLayout>
+ 
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+ 
+        <Button
+            android:id="@+id/btn_calc_07"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:text="btn_calc_07" />
+ 
+        <Button
+            android:id="@+id/btn_calc_08"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:text="btn_calc_08" />
+ 
+        <Button
+            android:id="@+id/btn_calc_09"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:text="btn_calc_09" />
+ 
+        <Button
+            android:id="@+id/btn_calc_jia"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:text="btn_calc_jia" />
+    </LinearLayout>
+ 
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+ 
+        <Button
+            android:id="@+id/btn_calc_04"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:text="btn_calc_04" />
+ 
+        <Button
+            android:id="@+id/btn_calc_05"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:text="btn_calc_05" />
+ 
+        <Button
+            android:id="@+id/btn_calc_06"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:text="btn_calc_06" />
+ 
+        <Button
+            android:id="@+id/btn_calc_jian"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:text="btn_calc_jian" />
+    </LinearLayout>
+ 
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+ 
+        <Button
+            android:id="@+id/btn_calc_01"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:text="btn_calc_01" />
+ 
+        <Button
+            android:id="@+id/btn_calc_02"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:text="btn_calc_02" />
+ 
+        <Button
+            android:id="@+id/btn_calc_03"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:text="btn_calc_03" />
+ 
+        <Button
+            android:id="@+id/btn_calc_cheng"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:text="btn_calc_cheng" />
+    </LinearLayout>
+ 
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+ 
+        <Button
+            android:id="@+id/btn_calc_00"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:text="btn_calc_00" />
+ 
+        <Button
+            android:id="@+id/btn_calc_c"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:text="btn_calc_c" />
+ 
+        <Button
+            android:id="@+id/btn_calc_dengyu"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:text="btn_calc_dengyu" />
+ 
+        <Button
+            android:id="@+id/btn_calc_chu"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:text="btn_calc_chu" />
+    </LinearLayout>
+ 
+</LinearLayout>
