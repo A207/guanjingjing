@@ -3,27 +3,31 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
-    android:paddingTop="5dip"
+    
     android:background="#000" >
  
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal" >
+        android:orientation="horizontal"
+        android:layout_marginTop="180dip" >
  
         <TextView
             android:id="@+id/tv_calc_sum"
             android:layout_width="fill_parent"
             android:layout_height="50dip"
             android:background="#fff"
-            android:gravity="center_vertical|right" >
+            android:gravity="center_vertical|right"
+            android:layout_marginLeft="4dip"
+            android:layout_marginRight="4dip" >
         </TextView>
     </LinearLayout>
  
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal" >
+        android:orientation="horizontal"
+        android:layout_marginTop="10dip" >
  
         <Button
             android:id="@+id/btn_calc_07"
